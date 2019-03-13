@@ -25,7 +25,7 @@ public class User {
 	private static int IDCount = 0;
 	
 	/**
-	 * Constructs a User object with a first and last name, email, and password.
+	 * Constructs a User Object with a first and last name, email address, and password.
 	 * @param firstName A String representing the first name of the user
 	 * @param lastName A String representing the last name of the user
 	 * @param email A String representing the email address of the user
@@ -151,5 +151,13 @@ public class User {
 		securityQuestion2Answer = keyboard.nextLine();
 		
 		keyboard.close();
+	}
+	
+	/**
+	 * Returns a string representation of the User Object.
+	 * @return A String representation of the User Object
+	 */
+	public String toString() {
+		return this.firstName + " " + this.lastName + ", Email: " + this.email;
 	}
 }
