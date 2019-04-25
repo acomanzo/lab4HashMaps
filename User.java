@@ -33,8 +33,7 @@ public class User {
 	 */
 	public User(String firstName, String lastName, String email, String password) {
 		this(firstName, lastName, email, password, null);
-		IDCount++;
-		userID = IDCount;
+		
 	}
 	
 	/**
@@ -47,8 +46,7 @@ public class User {
 	 */
 	public User(String firstName, String lastName, String email, String password, String gender) {
 		this(firstName, lastName, email, password, gender, null);
-		IDCount++;
-		userID = IDCount;
+		
 	}
 	
 	/**
